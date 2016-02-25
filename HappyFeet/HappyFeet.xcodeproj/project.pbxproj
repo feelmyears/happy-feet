@@ -12,6 +12,7 @@
 		21416A5B1C7F9F04007E6DFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21416A591C7F9F04007E6DFD /* Main.storyboard */; };
 		21416A5D1C7F9F04007E6DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21416A5C1C7F9F04007E6DFD /* Assets.xcassets */; };
 		21416A601C7F9F04007E6DFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21416A5E1C7F9F04007E6DFD /* LaunchScreen.storyboard */; };
+		215EDCEFDC82C23E9044F26F /* Pods_HappyFeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD8FCFC890383272C891967 /* Pods_HappyFeet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		21416A5C1C7F9F04007E6DFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21416A5F1C7F9F04007E6DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21416A611C7F9F04007E6DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CD8FCFC890383272C891967 /* Pods_HappyFeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyFeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D8464DDF2D89E17FD1343D /* Pods-HappyFeet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyFeet.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyFeet/Pods-HappyFeet.release.xcconfig"; sourceTree = "<group>"; };
+		9ACCFE6437B6294014FF1655 /* Pods-HappyFeet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyFeet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyFeet/Pods-HappyFeet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				215EDCEFDC82C23E9044F26F /* Pods_HappyFeet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F8B742E3640453F027B4085 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CD8FCFC890383272C891967 /* Pods_HappyFeet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		21416A491C7F9F04007E6DFD = {
 			isa = PBXGroup;
 			children = (
 				21416A541C7F9F04007E6DFD /* HappyFeet */,
 				21416A531C7F9F04007E6DFD /* Products */,
+				A81BCB0E212E6C09667A40F9 /* Pods */,
+				0F8B742E3640453F027B4085 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = HappyFeet;
 			sourceTree = "<group>";
 		};
+		A81BCB0E212E6C09667A40F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9ACCFE6437B6294014FF1655 /* Pods-HappyFeet.debug.xcconfig */,
+				85D8464DDF2D89E17FD1343D /* Pods-HappyFeet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21416A641C7F9F04007E6DFD /* Build configuration list for PBXNativeTarget "HappyFeet" */;
 			buildPhases = (
+				19D1C9ED4099209AB36FF6C0 /* Check Pods Manifest.lock */,
 				21416A4E1C7F9F04007E6DFD /* Sources */,
 				21416A4F1C7F9F04007E6DFD /* Frameworks */,
 				21416A501C7F9F04007E6DFD /* Resources */,
+				54D339E2BCD2F57AD13E3264 /* Embed Pods Frameworks */,
+				71409FD888E1CBF35BA734EA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19D1C9ED4099209AB36FF6C0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		54D339E2BCD2F57AD13E3264 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HappyFeet/Pods-HappyFeet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71409FD888E1CBF35BA734EA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HappyFeet/Pods-HappyFeet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		21416A4E1C7F9F04007E6DFD /* Sources */ = {
@@ -245,6 +320,7 @@
 		};
 		21416A651C7F9F04007E6DFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ACCFE6437B6294014FF1655 /* Pods-HappyFeet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HappyFeet/Info.plist;
@@ -256,6 +332,7 @@
 		};
 		21416A661C7F9F04007E6DFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85D8464DDF2D89E17FD1343D /* Pods-HappyFeet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HappyFeet/Info.plist;
@@ -284,6 +361,7 @@
 				21416A661C7F9F04007E6DFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
