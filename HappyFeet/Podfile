@@ -9,5 +9,7 @@ use_frameworks!
 
 target 'HappyFeet' do
 	pod 'Masonry'
+	pod 'Charts'
+	pod "TextFieldEffects"
 end
 

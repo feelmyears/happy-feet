@@ -13,6 +13,8 @@
 		21416A5D1C7F9F04007E6DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21416A5C1C7F9F04007E6DFD /* Assets.xcassets */; };
 		21416A601C7F9F04007E6DFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21416A5E1C7F9F04007E6DFD /* LaunchScreen.storyboard */; };
 		215EDCEFDC82C23E9044F26F /* Pods_HappyFeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD8FCFC890383272C891967 /* Pods_HappyFeet.framework */; };
+		21C2DBB51C7FA90900E06A9C /* HFProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C2DBB41C7FA90900E06A9C /* HFProfileViewController.swift */; };
+		21C612221C7FA4C60085B7B2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C612211C7FA4C60085B7B2 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		21416A5C1C7F9F04007E6DFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21416A5F1C7F9F04007E6DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21416A611C7F9F04007E6DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21C2DBB41C7FA90900E06A9C /* HFProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFProfileViewController.swift; sourceTree = "<group>"; };
+		21C612211C7FA4C60085B7B2 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		7CD8FCFC890383272C891967 /* Pods_HappyFeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyFeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D8464DDF2D89E17FD1343D /* Pods-HappyFeet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyFeet.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyFeet/Pods-HappyFeet.release.xcconfig"; sourceTree = "<group>"; };
 		9ACCFE6437B6294014FF1655 /* Pods-HappyFeet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyFeet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyFeet/Pods-HappyFeet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 		21416A491C7F9F04007E6DFD = {
 			isa = PBXGroup;
 			children = (
+				21C6121E1C7FA31A0085B7B2 /* Views */,
 				21416A541C7F9F04007E6DFD /* HappyFeet */,
 				21416A531C7F9F04007E6DFD /* Products */,
 				A81BCB0E212E6C09667A40F9 /* Pods */,
@@ -72,11 +77,20 @@
 				21416A551C7F9F04007E6DFD /* AppDelegate.swift */,
 				21416A571C7F9F04007E6DFD /* ViewController.swift */,
 				21416A591C7F9F04007E6DFD /* Main.storyboard */,
+				21C612211C7FA4C60085B7B2 /* Profile.storyboard */,
 				21416A5C1C7F9F04007E6DFD /* Assets.xcassets */,
 				21416A5E1C7F9F04007E6DFD /* LaunchScreen.storyboard */,
 				21416A611C7F9F04007E6DFD /* Info.plist */,
 			);
 			path = HappyFeet;
+			sourceTree = "<group>";
+		};
+		21C6121E1C7FA31A0085B7B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				21C2DBB41C7FA90900E06A9C /* HFProfileViewController.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		A81BCB0E212E6C09667A40F9 /* Pods */ = {
@@ -117,6 +131,7 @@
 		21416A4A1C7F9F04007E6DFD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HF;
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = happyfeet;
@@ -151,6 +166,7 @@
 			files = (
 				21416A601C7F9F04007E6DFD /* LaunchScreen.storyboard in Resources */,
 				21416A5D1C7F9F04007E6DFD /* Assets.xcassets in Resources */,
+				21C612221C7FA4C60085B7B2 /* Profile.storyboard in Resources */,
 				21416A5B1C7F9F04007E6DFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C2DBB51C7FA90900E06A9C /* HFProfileViewController.swift in Sources */,
 				21416A581C7F9F04007E6DFD /* ViewController.swift in Sources */,
 				21416A561C7F9F04007E6DFD /* AppDelegate.swift in Sources */,
 			);

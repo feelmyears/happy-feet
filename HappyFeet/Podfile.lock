@@ -1,10 +1,18 @@
 PODS:
+  - Charts (2.2.2):
+    - Charts/Core (= 2.2.2)
+  - Charts/Core (2.2.2)
   - Masonry (0.6.4)
+  - TextFieldEffects (1.1.0)
 
 DEPENDENCIES:
+  - Charts
   - Masonry
+  - TextFieldEffects
 
 SPEC CHECKSUMS:
+  Charts: e32b718fa716bdb7693b9e419d6d4a39a3f7992e
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  TextFieldEffects: 8e43fea8836e97be80fc4db27a1596c9e98a26ba
 
 COCOAPODS: 0.39.0
