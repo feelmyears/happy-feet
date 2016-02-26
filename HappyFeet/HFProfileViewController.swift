@@ -7,11 +7,9 @@
 //
 
 import UIKit
-import Charts
 
 class HFProfileViewController: UIViewController {
 
-	@IBOutlet weak var lineChartView: LineChartView!
     override func viewDidLoad() {
         super.viewDidLoad()
 		self.loadFakeData();
@@ -24,8 +22,6 @@ class HFProfileViewController: UIViewController {
 
 	func loadFakeData() {
 
-		var chartData = LineChartData(xVals: [0,1,2,3,4,5]);
-		self.lineChartView.lineData = chartData;
 	}
 
     /*
