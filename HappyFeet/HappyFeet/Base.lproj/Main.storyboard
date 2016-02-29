@@ -411,7 +411,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O11-A2-Vo7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="T4p-RG-ZeB">
                     <connections>
-                        <segue destination="eTk-cb-vFL" kind="show" id="o9A-qi-0qN"/>
+                        <segue destination="eTk-cb-vFL" kind="show" identifier="Profile_Segue" id="o9A-qi-0qN"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -618,7 +618,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etv-hm-Ce6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3928.5" y="-151.5"/>
+            <point key="canvasLocation" x="3901.5" y="-160.5"/>
         </scene>
     </scenes>
 </document>
