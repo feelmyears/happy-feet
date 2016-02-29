@@ -14,6 +14,7 @@
 		21416A601C7F9F04007E6DFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21416A5E1C7F9F04007E6DFD /* LaunchScreen.storyboard */; };
 		215EDCEFDC82C23E9044F26F /* Pods_HappyFeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD8FCFC890383272C891967 /* Pods_HappyFeet.framework */; };
 		21C2DBB51C7FA90900E06A9C /* HFProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C2DBB41C7FA90900E06A9C /* HFProfileViewController.swift */; };
+		6748D6D21C841A23001A0A89 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6748D6D11C841A23001A0A89 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		21416A5F1C7F9F04007E6DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21416A611C7F9F04007E6DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21C2DBB41C7FA90900E06A9C /* HFProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFProfileViewController.swift; sourceTree = "<group>"; };
+		6748D6D11C841A23001A0A89 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7CD8FCFC890383272C891967 /* Pods_HappyFeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyFeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D8464DDF2D89E17FD1343D /* Pods-HappyFeet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyFeet.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyFeet/Pods-HappyFeet.release.xcconfig"; sourceTree = "<group>"; };
 		9ACCFE6437B6294014FF1655 /* Pods-HappyFeet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyFeet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyFeet/Pods-HappyFeet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				21416A551C7F9F04007E6DFD /* AppDelegate.swift */,
 				21416A571C7F9F04007E6DFD /* ViewController.swift */,
 				21416A591C7F9F04007E6DFD /* Main.storyboard */,
+				6748D6D11C841A23001A0A89 /* LoginViewController.swift */,
 				21416A5C1C7F9F04007E6DFD /* Assets.xcassets */,
 				21416A5E1C7F9F04007E6DFD /* LaunchScreen.storyboard */,
 				21416A611C7F9F04007E6DFD /* Info.plist */,
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6748D6D21C841A23001A0A89 /* LoginViewController.swift in Sources */,
 				21C2DBB51C7FA90900E06A9C /* HFProfileViewController.swift in Sources */,
 				21416A581C7F9F04007E6DFD /* ViewController.swift in Sources */,
 				21416A561C7F9F04007E6DFD /* AppDelegate.swift in Sources */,

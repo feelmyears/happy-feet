@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ht7-4O-lmI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OPS-t7-yfc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -22,6 +22,69 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVx-Xt-9gF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2187" y="-160.5"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="okQ-te-7aL">
+            <objects>
+                <viewController id="OPS-t7-yfc" customClass="LoginViewController" customModule="HappyFeet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VO7-mn-zYp"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fk-d1-B1a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GuO-Vz-sUe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGs-qm-tcb">
+                                <rect key="frame" x="237" y="104" width="126" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DqO-pa-Qkj">
+                                <rect key="frame" x="129" y="181" width="342" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7wY-1a-Kbg">
+                                <rect key="frame" x="129" y="319" width="342" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uXE-JX-m8z">
+                                <rect key="frame" x="129" y="249" width="342" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xB-tr-ydc">
+                                <rect key="frame" x="265" y="374" width="71" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Create"/>
+                                <connections>
+                                    <action selector="createButton:" destination="OPS-t7-yfc" eventType="touchUpInside" id="vxE-eq-ASr"/>
+                                    <segue destination="esJ-tq-FkN" kind="show" id="gYX-t8-GBP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7wY-1a-Kbg" firstAttribute="centerX" secondItem="GuO-Vz-sUe" secondAttribute="centerX" id="1j0-3Z-NgB"/>
+                            <constraint firstItem="DqO-pa-Qkj" firstAttribute="centerX" secondItem="GuO-Vz-sUe" secondAttribute="centerX" id="1os-pk-HMH"/>
+                            <constraint firstItem="BGs-qm-tcb" firstAttribute="centerX" secondItem="GuO-Vz-sUe" secondAttribute="centerX" id="J2g-vo-wuy"/>
+                            <constraint firstItem="uXE-JX-m8z" firstAttribute="centerX" secondItem="GuO-Vz-sUe" secondAttribute="centerX" id="e0g-N3-IUP"/>
+                            <constraint firstItem="5xB-tr-ydc" firstAttribute="centerX" secondItem="7wY-1a-Kbg" secondAttribute="centerX" id="x6r-0x-bHp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="uXE-JX-m8z" id="kIe-aG-3ui"/>
+                        <outlet property="nameTextField" destination="DqO-pa-Qkj" id="nCV-LG-jqi"/>
+                        <outlet property="passwordTextField" destination="7wY-1a-Kbg" id="0qM-Hk-jpj"/>
+                        <outlet property="signupLabel" destination="BGs-qm-tcb" id="caX-Rp-fMW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TNs-Ye-g4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2839" y="-873"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="k3l-92-zuy">
@@ -716,4 +779,7 @@
             <point key="canvasLocation" x="3901.5" y="-160.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gYX-t8-GBP"/>
+    </inferredMetricsTieBreakers>
 </document>
