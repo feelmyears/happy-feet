@@ -13,6 +13,10 @@
 		21416A5D1C7F9F04007E6DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21416A5C1C7F9F04007E6DFD /* Assets.xcassets */; };
 		21416A601C7F9F04007E6DFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21416A5E1C7F9F04007E6DFD /* LaunchScreen.storyboard */; };
 		215EDCEFDC82C23E9044F26F /* Pods_HappyFeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD8FCFC890383272C891967 /* Pods_HappyFeet.framework */; };
+		218E657C1C84FD1F006D7212 /* HFMainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E657B1C84FD1F006D7212 /* HFMainScreenViewController.swift */; };
+		218E657E1C84FEAC006D7212 /* HFUserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E657D1C84FEAC006D7212 /* HFUserSingleton.swift */; };
+		218E65801C85025E006D7212 /* HFDonateChooseFriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E657F1C85025E006D7212 /* HFDonateChooseFriendTableViewController.swift */; };
+		218E65821C850437006D7212 /* HFPaymentInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E65811C850437006D7212 /* HFPaymentInfoTableViewController.swift */; };
 		21C2DBB51C7FA90900E06A9C /* HFProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C2DBB41C7FA90900E06A9C /* HFProfileViewController.swift */; };
 		6748D6D21C841A23001A0A89 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6748D6D11C841A23001A0A89 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -25,8 +29,12 @@
 		21416A5C1C7F9F04007E6DFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21416A5F1C7F9F04007E6DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21416A611C7F9F04007E6DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		218E657B1C84FD1F006D7212 /* HFMainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFMainScreenViewController.swift; sourceTree = "<group>"; };
+		218E657D1C84FEAC006D7212 /* HFUserSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFUserSingleton.swift; sourceTree = "<group>"; };
+		218E657F1C85025E006D7212 /* HFDonateChooseFriendTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HFDonateChooseFriendTableViewController.swift; path = HappyFeet/HFDonateChooseFriendTableViewController.swift; sourceTree = "<group>"; };
+		218E65811C850437006D7212 /* HFPaymentInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFPaymentInfoTableViewController.swift; sourceTree = "<group>"; };
 		21C2DBB41C7FA90900E06A9C /* HFProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFProfileViewController.swift; sourceTree = "<group>"; };
-		6748D6D11C841A23001A0A89 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6748D6D11C841A23001A0A89 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = HappyFeet/LoginViewController.swift; sourceTree = "<group>"; };
 		7CD8FCFC890383272C891967 /* Pods_HappyFeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyFeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D8464DDF2D89E17FD1343D /* Pods-HappyFeet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyFeet.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyFeet/Pods-HappyFeet.release.xcconfig"; sourceTree = "<group>"; };
 		9ACCFE6437B6294014FF1655 /* Pods-HappyFeet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyFeet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyFeet/Pods-HappyFeet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -55,6 +63,7 @@
 		21416A491C7F9F04007E6DFD = {
 			isa = PBXGroup;
 			children = (
+				218E657D1C84FEAC006D7212 /* HFUserSingleton.swift */,
 				21C6121E1C7FA31A0085B7B2 /* Views */,
 				21416A541C7F9F04007E6DFD /* HappyFeet */,
 				21416A531C7F9F04007E6DFD /* Products */,
@@ -77,7 +86,6 @@
 				21416A551C7F9F04007E6DFD /* AppDelegate.swift */,
 				21416A571C7F9F04007E6DFD /* ViewController.swift */,
 				21416A591C7F9F04007E6DFD /* Main.storyboard */,
-				6748D6D11C841A23001A0A89 /* LoginViewController.swift */,
 				21416A5C1C7F9F04007E6DFD /* Assets.xcassets */,
 				21416A5E1C7F9F04007E6DFD /* LaunchScreen.storyboard */,
 				21416A611C7F9F04007E6DFD /* Info.plist */,
@@ -89,6 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				21C2DBB41C7FA90900E06A9C /* HFProfileViewController.swift */,
+				218E657B1C84FD1F006D7212 /* HFMainScreenViewController.swift */,
+				218E657F1C85025E006D7212 /* HFDonateChooseFriendTableViewController.swift */,
+				218E65811C850437006D7212 /* HFPaymentInfoTableViewController.swift */,
+				6748D6D11C841A23001A0A89 /* LoginViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -225,7 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218E65821C850437006D7212 /* HFPaymentInfoTableViewController.swift in Sources */,
+				218E657E1C84FEAC006D7212 /* HFUserSingleton.swift in Sources */,
 				6748D6D21C841A23001A0A89 /* LoginViewController.swift in Sources */,
+				218E65801C85025E006D7212 /* HFDonateChooseFriendTableViewController.swift in Sources */,
+				218E657C1C84FD1F006D7212 /* HFMainScreenViewController.swift in Sources */,
 				21C2DBB51C7FA90900E06A9C /* HFProfileViewController.swift in Sources */,
 				21416A581C7F9F04007E6DFD /* ViewController.swift in Sources */,
 				21416A561C7F9F04007E6DFD /* AppDelegate.swift in Sources */,

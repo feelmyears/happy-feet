@@ -1,35 +1,35 @@
 //
-//  HFProfileViewController.swift
+//  HFMainScreenViewController.swift
 //  HappyFeet
 //
-//  Created by Phil Meyers IV on 2/25/16.
+//  Created by Phil Meyers IV on 2/29/16.
 //  Copyright © 2016 happyfeet. All rights reserved.
 //
 
 import UIKit
 
-class HFProfileViewController: UIViewController {
+class HFMainScreenViewController: UIViewController {
 	let userInfo = HFUserSingleton.sharedInstance;
 
-	@IBOutlet weak var imageView: UIImageView!
-	@IBOutlet weak var nameLabel: UILabel!
-	@IBOutlet weak var bioTextView: UITextView!
-	@IBOutlet weak var activityTableView: UITableView!
+	@IBOutlet weak var logRunButton: UIView!
+	@IBOutlet weak var titleLabel: UILabel!
 
-	
     override func viewDidLoad() {
         super.viewDidLoad()
-		self.loadFakeData();
+
+        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-	func loadFakeData() {
-
+	override func viewWillAppear(animated: Bool) {
+		super.viewWillAppear(animated);
+		self.configureView();
 	}
+
+	func configureView() {
+		self.logRunButton.layer.cornerRadius = (self.logRunButton.bounds.size.height)/2.0;
+		self.titleLabel.text = "Welcome back, " + self.userInfo.name + "!";
+	}
+    
 
     /*
     // MARK: - Navigation

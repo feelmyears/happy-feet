@@ -1,18 +1,21 @@
 PODS:
-  - Charts (2.2.2):
-    - Charts/Core (= 2.2.2)
-  - Charts/Core (2.2.2)
+  - Charts (2.2.3):
+    - Charts/Core (= 2.2.3)
+  - Charts/Core (2.2.3)
+  - ImagePickerSheetController (0.9.1)
   - Masonry (0.6.4)
-  - TextFieldEffects (1.1.0)
+  - TextFieldEffects (1.1.1)
 
 DEPENDENCIES:
   - Charts
+  - ImagePickerSheetController (~> 0.9.1)
   - Masonry
   - TextFieldEffects
 
 SPEC CHECKSUMS:
-  Charts: e32b718fa716bdb7693b9e419d6d4a39a3f7992e
+  Charts: f54267bb3f0f0e74520c6f248517cf5074dfd6fc
+  ImagePickerSheetController: 3c58c9fee6dcf36485222358a021f6b734f997ba
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
-  TextFieldEffects: 8e43fea8836e97be80fc4db27a1596c9e98a26ba
+  TextFieldEffects: a1a78efeb93b65c611ad287b28a068c9a4a5f5b4
 
 COCOAPODS: 0.39.0

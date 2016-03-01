@@ -11,5 +11,6 @@ target 'HappyFeet' do
 	pod 'Masonry'
 	pod 'Charts'
 	pod "TextFieldEffects"
+	pod "ImagePickerSheetController", "~> 0.9.1"
 end
 
