@@ -1707,8 +1707,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24v-Jt-Nfd">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bvW-io-CoC">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bvW-io-CoC">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" red="0.30336808750660649" green="1" blue="0.8409156041635617" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="bvW-io-CoC" secondAttribute="height" id="Np2-vF-cDX"/>
                                         </constraints>
@@ -1722,6 +1724,9 @@
                                                 <include reference="Np2-vF-cDX"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="g7v-sZ-Vz4" appends="YES" id="ye5-Jt-Tf4"/>
+                                        </connections>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add bio here!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Uuy-Ym-Yy2">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -1890,6 +1895,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
                         <outlet property="activityTableView" destination="PZV-PZ-9UX" id="Ugt-zX-InN"/>
                         <outlet property="bioTextView" destination="Uuy-Ym-Yy2" id="7mC-nS-XfV"/>
@@ -1898,6 +1904,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etv-hm-Ce6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="g7v-sZ-Vz4">
+                    <connections>
+                        <action selector="imageViewTapAction:" destination="eTk-cb-vFL" id="T4s-wG-ZIg"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3985.5" y="-344.25"/>
         </scene>

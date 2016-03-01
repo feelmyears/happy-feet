@@ -42,6 +42,31 @@ class HFUserSingleton: NSObject {
 		}
 	}
 
+
+	var bio: String! {
+		get {
+			return prefs.stringForKey("bio");
+		} set {
+			prefs.setValue(newValue, forKey: "bio");
+			prefs.synchronize();
+		}
+	}
+
+	var image: UIImage! {
+		get {
+			if let data = prefs.valueForKey("image") {
+				if let image = UIImage(data: data as! NSData) {
+					return image
+				}
+			}
+			return nil;
+		}
+		set {
+			prefs.setValue(UIImagePNGRepresentation(newValue), forKey: "image");
+			prefs.synchronize();
+		}
+	}
+
 	override init() {
 
 	}
