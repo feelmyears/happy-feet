@@ -10,7 +10,6 @@
 		21416A561C7F9F04007E6DFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21416A551C7F9F04007E6DFD /* AppDelegate.swift */; };
 		21416A581C7F9F04007E6DFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21416A571C7F9F04007E6DFD /* ViewController.swift */; };
 		21416A5B1C7F9F04007E6DFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21416A591C7F9F04007E6DFD /* Main.storyboard */; };
-		21416A5D1C7F9F04007E6DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21416A5C1C7F9F04007E6DFD /* Assets.xcassets */; };
 		21416A601C7F9F04007E6DFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21416A5E1C7F9F04007E6DFD /* LaunchScreen.storyboard */; };
 		215EDCEFDC82C23E9044F26F /* Pods_HappyFeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD8FCFC890383272C891967 /* Pods_HappyFeet.framework */; };
 		218E657C1C84FD1F006D7212 /* HFMainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E657B1C84FD1F006D7212 /* HFMainScreenViewController.swift */; };
@@ -19,6 +18,7 @@
 		218E65821C850437006D7212 /* HFPaymentInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E65811C850437006D7212 /* HFPaymentInfoTableViewController.swift */; };
 		219BE19A1C869A8F004C083E /* HFRunModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219BE1991C869A8F004C083E /* HFRunModel.swift */; };
 		219BE19C1C86A301004C083E /* HFLogRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219BE19B1C86A301004C083E /* HFLogRunViewController.swift */; };
+		219BE19E1C86C279004C083E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219BE19D1C86C279004C083E /* Media.xcassets */; };
 		21C2DBB51C7FA90900E06A9C /* HFProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C2DBB41C7FA90900E06A9C /* HFProfileViewController.swift */; };
 		6748D6D21C841A23001A0A89 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6748D6D11C841A23001A0A89 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,7 +28,6 @@
 		21416A551C7F9F04007E6DFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21416A571C7F9F04007E6DFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		21416A5A1C7F9F04007E6DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		21416A5C1C7F9F04007E6DFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21416A5F1C7F9F04007E6DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21416A611C7F9F04007E6DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		218E657B1C84FD1F006D7212 /* HFMainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFMainScreenViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		218E65811C850437006D7212 /* HFPaymentInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFPaymentInfoTableViewController.swift; sourceTree = "<group>"; };
 		219BE1991C869A8F004C083E /* HFRunModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFRunModel.swift; sourceTree = "<group>"; };
 		219BE19B1C86A301004C083E /* HFLogRunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFLogRunViewController.swift; sourceTree = "<group>"; };
+		219BE19D1C86C279004C083E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		21C2DBB41C7FA90900E06A9C /* HFProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFProfileViewController.swift; sourceTree = "<group>"; };
 		6748D6D11C841A23001A0A89 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = HappyFeet/LoginViewController.swift; sourceTree = "<group>"; };
 		7CD8FCFC890383272C891967 /* Pods_HappyFeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyFeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +91,7 @@
 				21416A551C7F9F04007E6DFD /* AppDelegate.swift */,
 				21416A571C7F9F04007E6DFD /* ViewController.swift */,
 				21416A591C7F9F04007E6DFD /* Main.storyboard */,
-				21416A5C1C7F9F04007E6DFD /* Assets.xcassets */,
+				219BE19D1C86C279004C083E /* Media.xcassets */,
 				21416A5E1C7F9F04007E6DFD /* LaunchScreen.storyboard */,
 				21416A611C7F9F04007E6DFD /* Info.plist */,
 			);
@@ -183,7 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21416A601C7F9F04007E6DFD /* LaunchScreen.storyboard in Resources */,
-				21416A5D1C7F9F04007E6DFD /* Assets.xcassets in Resources */,
+				219BE19E1C86C279004C083E /* Media.xcassets in Resources */,
 				21416A5B1C7F9F04007E6DFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
