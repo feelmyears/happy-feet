@@ -18,6 +18,7 @@
 		218E65801C85025E006D7212 /* HFDonateChooseFriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E657F1C85025E006D7212 /* HFDonateChooseFriendTableViewController.swift */; };
 		218E65821C850437006D7212 /* HFPaymentInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E65811C850437006D7212 /* HFPaymentInfoTableViewController.swift */; };
 		219BE19A1C869A8F004C083E /* HFRunModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219BE1991C869A8F004C083E /* HFRunModel.swift */; };
+		219BE19C1C86A301004C083E /* HFLogRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219BE19B1C86A301004C083E /* HFLogRunViewController.swift */; };
 		21C2DBB51C7FA90900E06A9C /* HFProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C2DBB41C7FA90900E06A9C /* HFProfileViewController.swift */; };
 		6748D6D21C841A23001A0A89 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6748D6D11C841A23001A0A89 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		218E657F1C85025E006D7212 /* HFDonateChooseFriendTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HFDonateChooseFriendTableViewController.swift; path = HappyFeet/HFDonateChooseFriendTableViewController.swift; sourceTree = "<group>"; };
 		218E65811C850437006D7212 /* HFPaymentInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFPaymentInfoTableViewController.swift; sourceTree = "<group>"; };
 		219BE1991C869A8F004C083E /* HFRunModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFRunModel.swift; sourceTree = "<group>"; };
+		219BE19B1C86A301004C083E /* HFLogRunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFLogRunViewController.swift; sourceTree = "<group>"; };
 		21C2DBB41C7FA90900E06A9C /* HFProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFProfileViewController.swift; sourceTree = "<group>"; };
 		6748D6D11C841A23001A0A89 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = HappyFeet/LoginViewController.swift; sourceTree = "<group>"; };
 		7CD8FCFC890383272C891967 /* Pods_HappyFeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyFeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +106,7 @@
 				218E657F1C85025E006D7212 /* HFDonateChooseFriendTableViewController.swift */,
 				218E65811C850437006D7212 /* HFPaymentInfoTableViewController.swift */,
 				6748D6D11C841A23001A0A89 /* LoginViewController.swift */,
+				219BE19B1C86A301004C083E /* HFLogRunViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				6748D6D21C841A23001A0A89 /* LoginViewController.swift in Sources */,
 				219BE19A1C869A8F004C083E /* HFRunModel.swift in Sources */,
 				218E65801C85025E006D7212 /* HFDonateChooseFriendTableViewController.swift in Sources */,
+				219BE19C1C86A301004C083E /* HFLogRunViewController.swift in Sources */,
 				218E657C1C84FD1F006D7212 /* HFMainScreenViewController.swift in Sources */,
 				21C2DBB51C7FA90900E06A9C /* HFProfileViewController.swift in Sources */,
 				21416A581C7F9F04007E6DFD /* ViewController.swift in Sources */,

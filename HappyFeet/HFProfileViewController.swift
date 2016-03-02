@@ -106,9 +106,13 @@ class HFProfileViewController: UIViewController, ImagePickerDelegate, UITableVie
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		let run = self.recentRuns[indexPath.row];
 		let cell = tableView.dequeueReusableCellWithIdentifier("Run Info Cell", forIndexPath: indexPath) as UITableViewCell
-		cell.textLabel?.text = run.location + " " + run.date.toString()!;
+		cell.textLabel?.text = run.location;
 		cell.detailTextLabel?.text = "\(run.distance)";
 		return cell;
+	}
+
+	func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+		return "Recent Runs";
 	}
 
     /*

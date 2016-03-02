@@ -11,6 +11,7 @@ PODS:
     - Realm (= 0.98.3)
   - SwiftDate (3.0.6)
   - TextFieldEffects (1.1.1)
+  - UITextField+Shake (1.1.2)
 
 DEPENDENCIES:
   - Charts
@@ -19,6 +20,7 @@ DEPENDENCIES:
   - RealmSwift
   - SwiftDate
   - TextFieldEffects
+  - UITextField+Shake (~> 1.1)
 
 SPEC CHECKSUMS:
   Charts: f54267bb3f0f0e74520c6f248517cf5074dfd6fc
@@ -28,5 +30,6 @@ SPEC CHECKSUMS:
   RealmSwift: d6ecad6e4c2a645d6ac956c2c7e9efb375f39c31
   SwiftDate: 520c0e7de224c881fe4213caeca72d482ed3d45f
   TextFieldEffects: a1a78efeb93b65c611ad287b28a068c9a4a5f5b4
+  UITextField+Shake: 47cc0429dafb3da580686339ad2da091249a8ea2
 
 COCOAPODS: 0.39.0
