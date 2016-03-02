@@ -29,11 +29,6 @@ class HFProfileViewController: UIViewController, ImagePickerDelegate, UITableVie
 		super.viewDidLoad()
 		self.updateUserData();
 		self.activityTableView.dataSource = self;
-		let run = HFRunModel();
-		run.distance = 100;
-		run.date = NSDate();
-		run.location = "Location";
-		self.userInfo.addRun(run);
 
 		self.activityTableView.reloadData();
 //		self.activityTableView.delegate = self;

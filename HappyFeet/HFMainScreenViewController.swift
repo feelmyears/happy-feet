@@ -37,11 +37,20 @@ class HFMainScreenViewController: UIViewController {
 	@IBAction func newsFeetAction(sender: AnyObject) {
 		self.implementationAlert("Newsfeet");
 	}
-	
+
 	func implementationAlert(functionName: String) {
 		SCLAlertView().showError("Oops!", subTitle: functionName + " not yet implemented. Sorry!");
 	}
 
+	@IBAction func resetUserInfoAction(sender: AnyObject) {
+		let alertView = SCLAlertView()
+
+		alertView.addButton("Reset Info") {
+			self.userInfo.resetUser();
+		}
+
+		alertView.showWarning("Reset Info", subTitle:"Are you sure you want to reset all info?");
+	}
 
     /*
     // MARK: - Navigation

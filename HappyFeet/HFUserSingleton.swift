@@ -87,11 +87,14 @@ class HFUserSingleton: NSObject {
 	}
 
 	func resetUser() {
-		NSUserDefaults.resetStandardUserDefaults();
+		for key in ["image", "bio", "password", "name", "email"] {
+			prefs.removeObjectForKey(key);
+		}
 
 		let realm = try! Realm()
 		try! realm.write {
 			realm.deleteAll();
+			exit(0);
 		}
 
 	}

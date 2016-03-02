@@ -179,7 +179,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wpd-Uy-gvb">
                                         <rect key="frame" x="195" y="0.0" width="84" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3b-Cv-DQ3">
                                         <rect key="frame" x="319" y="0.0" width="78" height="42"/>
@@ -670,7 +670,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="ItA-OD-88P"/>
+                    <navigationItem key="navigationItem" id="ItA-OD-88P">
+                        <barButtonItem key="rightBarButtonItem" title="Reset" id="c0w-te-M7v">
+                            <connections>
+                                <action selector="resetUserInfoAction:" destination="esJ-tq-FkN" id="1nE-hc-q4H"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="logRunButton" destination="OOJ-a7-XO5" id="s7G-sA-ZeW"/>
                     </connections>
