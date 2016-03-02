@@ -12,5 +12,7 @@ target 'HappyFeet' do
 	pod 'Charts'
 	pod "TextFieldEffects"
 	pod 'ImagePicker'
+	pod 'RealmSwift'
+	pod 'SwiftDate'
 end
 

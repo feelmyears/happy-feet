@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class HFUserSingleton: NSObject {
 	static let sharedInstance = HFUserSingleton();
@@ -67,11 +68,31 @@ class HFUserSingleton: NSObject {
 		}
 	}
 
+
 	override init() {
 
 	}
 
+	func addRun(run: HFRunModel) {
+		let realm = try! Realm()
+		try! realm.write {
+			realm.add(run);
+		}
+	}
+
+	func getRuns() -> Results<HFRunModel> {
+		let realm = try! Realm()
+		let results = realm.objects(HFRunModel).sorted("date", ascending: false);
+		return results;
+	}
+
 	func resetUser() {
+		NSUserDefaults.resetStandardUserDefaults();
+
+		let realm = try! Realm()
+		try! realm.write {
+			realm.deleteAll();
+		}
 
 	}
 

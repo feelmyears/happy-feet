@@ -4,18 +4,29 @@ PODS:
   - Charts/Core (2.2.3)
   - ImagePicker (1.1)
   - Masonry (0.6.4)
+  - Realm (0.98.3):
+    - Realm/Headers (= 0.98.3)
+  - Realm/Headers (0.98.3)
+  - RealmSwift (0.98.3):
+    - Realm (= 0.98.3)
+  - SwiftDate (3.0.6)
   - TextFieldEffects (1.1.1)
 
 DEPENDENCIES:
   - Charts
   - ImagePicker
   - Masonry
+  - RealmSwift
+  - SwiftDate
   - TextFieldEffects
 
 SPEC CHECKSUMS:
   Charts: f54267bb3f0f0e74520c6f248517cf5074dfd6fc
   ImagePicker: 2a904341bbc47c96457de00558d2f8dd186eff7c
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  Realm: c6a7d00221a2d5177810a674aebd40c5e0b70b0f
+  RealmSwift: d6ecad6e4c2a645d6ac956c2c7e9efb375f39c31
+  SwiftDate: 520c0e7de224c881fe4213caeca72d482ed3d45f
   TextFieldEffects: a1a78efeb93b65c611ad287b28a068c9a4a5f5b4
 
 COCOAPODS: 0.39.0
