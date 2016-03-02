@@ -9,6 +9,7 @@ PODS:
   - Realm/Headers (0.98.3)
   - RealmSwift (0.98.3):
     - Realm (= 0.98.3)
+  - SCLAlertView (0.5.1)
   - SwiftDate (3.0.6)
   - TextFieldEffects (1.1.1)
   - UITextField+Shake (1.1.2)
@@ -18,6 +19,7 @@ DEPENDENCIES:
   - ImagePicker
   - Masonry
   - RealmSwift
+  - SCLAlertView
   - SwiftDate
   - TextFieldEffects
   - UITextField+Shake (~> 1.1)
@@ -28,6 +30,7 @@ SPEC CHECKSUMS:
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   Realm: c6a7d00221a2d5177810a674aebd40c5e0b70b0f
   RealmSwift: d6ecad6e4c2a645d6ac956c2c7e9efb375f39c31
+  SCLAlertView: 3ac39a863d3e10fc165662b1228b03402297aea9
   SwiftDate: 520c0e7de224c881fe4213caeca72d482ed3d45f
   TextFieldEffects: a1a78efeb93b65c611ad287b28a068c9a4a5f5b4
   UITextField+Shake: 47cc0429dafb3da580686339ad2da091249a8ea2

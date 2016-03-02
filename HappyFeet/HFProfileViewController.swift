@@ -10,6 +10,7 @@ import UIKit
 import ImagePicker
 import RealmSwift
 import SwiftDate
+import SCLAlertView
 
 class HFProfileViewController: UIViewController, ImagePickerDelegate, UITableViewDataSource {
 	let userInfo = HFUserSingleton.sharedInstance;
@@ -113,6 +114,22 @@ class HFProfileViewController: UIViewController, ImagePickerDelegate, UITableVie
 
 	func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 		return "Recent Runs";
+	}
+
+	@IBAction func addCausesAction(sender: AnyObject) {
+		self.implementationAlert("Add causes")
+	}
+
+	@IBAction func addBioAction(sender: AnyObject) {
+		SCLAlertView().showError("Oops!", subTitle: "Add bio functionality not yet implemented. A sample bio has been added to your profile.");
+		
+		self.userInfo.bio = "Hi! My name is " + self.userInfo.name + " and I love running for fantastic causes! Please support and donate to me as I train for the next Chicago marathon.";
+
+		self.updateUserData();
+	}
+	
+	func implementationAlert(functionName: String) {
+		SCLAlertView().showError("Oops!", subTitle: functionName + " not yet implemented. Sorry!");
 	}
 
     /*

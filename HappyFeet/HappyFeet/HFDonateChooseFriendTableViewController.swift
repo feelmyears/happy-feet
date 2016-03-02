@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SCLAlertView
 
 
 class HFDonateChooseFriendTableViewController: UITableViewController {
@@ -27,9 +27,13 @@ class HFDonateChooseFriendTableViewController: UITableViewController {
 		let cell = tableView.cellForRowAtIndexPath(indexPath);
 		let name = cell?.textLabel?.text;
 
-		self.performSegueWithIdentifier(SegueIdentifier, sender: name);
+//		self.performSegueWithIdentifier(SegueIdentifier, sender: name);
+		self.implementationAlert("Donate to " + name!);
 	}
 
+	func implementationAlert(functionName: String) {
+		SCLAlertView().showError("Oops!", subTitle: functionName + " not yet implemented. Sorry!");
+	}
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

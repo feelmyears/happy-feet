@@ -399,6 +399,7 @@
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.40784313729999999" green="0.78039215689999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="Y6K-1a-3RT" firstAttribute="top" secondItem="Nvc-dG-Krh" secondAttribute="top" constant="30" id="MvU-6L-s6a"/>
                                             <constraint firstItem="Y6K-1a-3RT" firstAttribute="centerY" secondItem="Nvc-dG-Krh" secondAttribute="centerY" id="StM-62-lqq"/>
@@ -421,6 +422,9 @@
                                                 <exclude reference="w27-8q-zZP"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Q5i-Af-KHA" appends="YES" id="sWM-au-oct"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8a-5C-ONO">
                                         <rect key="frame" x="300" y="250" width="300" height="250"/>
@@ -495,6 +499,9 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="15" y="164" width="72" height="20"/>
+                                                        </variation>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -509,6 +516,7 @@
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="UGN-xj-37q" firstAttribute="top" secondItem="kGP-BG-hmS" secondAttribute="top" constant="30" id="4EY-rz-psi"/>
                                             <constraint firstAttribute="trailing" secondItem="UGN-xj-37q" secondAttribute="trailing" constant="30" id="D0x-Ag-16R"/>
@@ -539,6 +547,9 @@
                                                 <exclude reference="tMf-B0-Tlm"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="RGa-My-HW2" appends="YES" id="MaV-uc-m5u"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOJ-a7-XO5">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -640,47 +651,28 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back, John!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJs-xD-TGY">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WJs-xD-TGY" firstAttribute="centerX" secondItem="uV2-6q-IkN" secondAttribute="centerX" id="57d-bV-6d3"/>
                             <constraint firstItem="UAo-CM-QtW" firstAttribute="leading" secondItem="uV2-6q-IkN" secondAttribute="leading" id="KPn-bG-H63"/>
-                            <constraint firstItem="UAo-CM-QtW" firstAttribute="top" secondItem="WJs-xD-TGY" secondAttribute="bottom" constant="20" id="X55-fr-ywF"/>
                             <constraint firstItem="Y5g-SJ-fB4" firstAttribute="top" secondItem="UAo-CM-QtW" secondAttribute="bottom" id="ZRd-Cv-Ab8"/>
                             <constraint firstAttribute="trailing" secondItem="UAo-CM-QtW" secondAttribute="trailing" id="ctZ-uF-JdV"/>
-                            <constraint firstItem="WJs-xD-TGY" firstAttribute="top" secondItem="ZmC-sa-1bw" secondAttribute="bottom" constant="20" id="sQd-rO-m9x"/>
+                            <constraint firstItem="UAo-CM-QtW" firstAttribute="top" secondItem="ZmC-sa-1bw" secondAttribute="bottom" id="sqK-81-mmN"/>
                         </constraints>
                         <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="WJs-xD-TGY"/>
-                            </mask>
                             <mask key="constraints">
-                                <exclude reference="57d-bV-6d3"/>
-                                <exclude reference="sQd-rO-m9x"/>
-                                <exclude reference="X55-fr-ywF"/>
+                                <exclude reference="sqK-81-mmN"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="WJs-xD-TGY"/>
-                            </mask>
                             <mask key="constraints">
-                                <include reference="57d-bV-6d3"/>
-                                <include reference="sQd-rO-m9x"/>
-                                <include reference="X55-fr-ywF"/>
+                                <include reference="sqK-81-mmN"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="ItA-OD-88P"/>
                     <connections>
                         <outlet property="logRunButton" destination="OOJ-a7-XO5" id="s7G-sA-ZeW"/>
-                        <outlet property="titleLabel" destination="WJs-xD-TGY" id="rnU-iu-gdK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O11-A2-Vo7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -697,6 +689,16 @@
                 <tapGestureRecognizer id="9aM-Tm-Tb8">
                     <connections>
                         <segue destination="g5u-SX-Nar" kind="show" id="Q7X-Du-Zof"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="RGa-My-HW2">
+                    <connections>
+                        <action selector="newsFeetAction:" destination="esJ-tq-FkN" id="kT8-8F-xT4"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Q5i-Af-KHA">
+                    <connections>
+                        <action selector="causesAction:" destination="esJ-tq-FkN" id="G2v-15-cvX"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -729,7 +731,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8U4-s2-skS">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="$123 raised" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8U4-s2-skS">
                                                     <rect key="frame" x="261" y="12" width="44" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -759,7 +761,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ysL-sE-hMA">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="$54 raised" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ysL-sE-hMA">
                                                     <rect key="frame" x="261" y="12" width="44" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -789,7 +791,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="L8P-uP-C0J">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="$10 raised" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="L8P-uP-C0J">
                                                     <rect key="frame" x="261" y="12" width="44" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -819,7 +821,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CQv-mg-cUn">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="$1337 raised" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CQv-mg-cUn">
                                                     <rect key="frame" x="261" y="12" width="44" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1808,6 +1810,9 @@
                                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Add a bio!"/>
+                                                <connections>
+                                                    <action selector="addBioAction:" destination="eTk-cb-vFL" eventType="touchUpInside" id="f5R-8W-tes"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1982,6 +1987,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZP-EE-qAu">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <state key="normal" title="Add causes!"/>
+                                        <connections>
+                                            <action selector="addCausesAction:" destination="eTk-cb-vFL" eventType="touchUpInside" id="Q8z-wK-Ffd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.62745098040000002" green="0.85098039219999999" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

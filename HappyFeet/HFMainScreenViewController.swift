@@ -7,12 +7,12 @@
 //
 
 import UIKit
+import SCLAlertView
 
 class HFMainScreenViewController: UIViewController {
 	let userInfo = HFUserSingleton.sharedInstance;
 
 	@IBOutlet weak var logRunButton: UIView!
-	@IBOutlet weak var titleLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +27,21 @@ class HFMainScreenViewController: UIViewController {
 
 	func configureView() {
 		self.logRunButton.layer.cornerRadius = (self.logRunButton.bounds.size.height)/2.0;
-		self.titleLabel.text = "Welcome back, " + self.userInfo.name + "!";
+		self.title = "Welcome back, " + self.userInfo.name + "!";
 	}
-    
+
+	@IBAction func causesAction(sender: AnyObject) {
+		self.implementationAlert("Causes");
+	}
+
+	@IBAction func newsFeetAction(sender: AnyObject) {
+		self.implementationAlert("Newsfeet");
+	}
+	
+	func implementationAlert(functionName: String) {
+		SCLAlertView().showError("Oops!", subTitle: functionName + " not yet implemented. Sorry!");
+	}
+
 
     /*
     // MARK: - Navigation

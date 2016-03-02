@@ -15,5 +15,6 @@ target 'HappyFeet' do
 	pod 'RealmSwift'
 	pod 'SwiftDate'
 	pod 'UITextField+Shake', '~> 1.1'
+	pod 'SCLAlertView'
 end
 
